@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: black;
+    /* background-color: black; */
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -12,6 +12,7 @@ body {
 
 section {
     background-color: white;
+    margin: 10px;
 }
 
 .nav{
@@ -30,9 +31,16 @@ section {
 
 .panel{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     flex-wrap: nowrap;
     margin: 20px;
+}
+
+.panel-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
 }
 
 span {
@@ -53,6 +61,21 @@ span {
     margin-bottom: 100px;
 }
 
-div .right{
-    height: 500px;
+.panel-right div {
+    background-color: white;
+    margin: 10px;    
+    border: 3px solid black;
+    height: 200px;
+    width: 900px;
+    margin-bottom: 100px;
+}
+
+.main {
+    display: flex;
+    justify-content: row;
+}
+
+.right {
+    border: 3px solid black;
+    margin-right: 50px;
 }
